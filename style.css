@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  color: #222;
+  background: #ddd8ce url("https://wallpaperswide.com/download/macbook_pro_m3_design_background-wallpaper-3840x2160.jpg") center / cover fixed;
+  font-family: Georgia, serif;
+}
+
+.newspaper {
+  width: min(900px, calc(100% - 32px));
+  margin: 24px auto;
+  padding: 24px 40px;
+  background: #fffdf7;
+}
+
+.papername {
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  padding: 12px 0;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1;
+}
+
+.headline {
+  margin: 24px 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.mainimage {
+  margin: 0 0 24px;
+}
+
+.mainimage img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 40vw, 420px);
+  object-fit: cover;
+  object-position: center 32%;
+}
+
+.articlecopy {
+  column-count: 2;
+  column-gap: 32px;
+  font-size: 0.92rem;
+  line-height: 1.72;
+  text-align: justify;
+}
+
+.articlecopy p {
+  margin-top: 0;
+}
+
+.dropcap::first-letter {
+  float: left;
+  margin: 0.08em 0.08em 0 0;
+  color: #261b8a;
+  font-size: 5.1rem;
+  line-height: 0.68;
+}
+
+blockquote {
+  break-inside: avoid;
+  margin: 20px 0;
+  padding: 12px 16px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  text-align: left;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 0.68rem;
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  .newspaper {
+    width: 100%;
+    margin: 0;
+    padding: 18px 20px 28px;
+  }
+
+  .papername {
+    font-size: 4rem;
+  }
+
+  .articlecopy {
+    column-count: 1;
+    text-align: left;
+  }
+}
